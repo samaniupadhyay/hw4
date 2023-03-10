@@ -14,7 +14,12 @@
     <%= form.label "posted_on" %>
     <%= form.date_field "posted_on" %>
   </p>
+  <%=  form.label "uploaded_image", :class => "form-label" %>
+  <%= form.date_field "uploaded_image", class => "form-control"%>
   <p>
-    <%= form.submit %>
+
+  </p>
+  <p>
+    <%= form.submit "Submit Post", class "btn btn-sucess" %>
   </p>
 <% end %>
